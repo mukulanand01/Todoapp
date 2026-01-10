@@ -1,0 +1,1 @@
+This is a simple Todo List web app made with HTML, CSS, and JavaScript. It lets users add daily tasks and delete them easily. The input box and Add button are placed on the same line to keep the UI clean. This project helped me understand basic DOM manipulation, event handling, and writing clean JavaScript logic.
