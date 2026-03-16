@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Todo App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="container">
-    <h2>Todo List</h2>
-
-    <div class="input-box">
-      <input type="text" placeholder="Enter task">
-      <button>Add</button>
+  <div class="card">
+    <div class="title">
+      <h1>Todo App</h1>
+      <p>Simple list to manage tasks</p>
     </div>
 
-    <ul></ul>
+    <div class="input-box">
+      <input id="taskInput" type="text" placeholder="Write a task...">
+      <button id="addBtn" type="button">Add Task</button>
+    </div>
+
+    <div class="actions">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="done">Done</button>
+      </div>
+      <button id="clearBtn" type="button">Clear All</button>
+    </div>
+
+    <p id="emptyState" class="empty">No tasks yet</p>
+    <ul id="taskList"></ul>
   </div>
 
-  <script script=".js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
